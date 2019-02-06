@@ -16,7 +16,7 @@ const FormComponent = ({ handleSubmit, services }) => {
 
 
     return (
-           <div style={{ background: `url(https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549408306/Five%20Star/prograss_res.jpg)`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} class="flex flex-column justify-center items-center mb-5 mt-5" >
+        <div style={{ background: `url(https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549408306/Five%20Star/prograss_res.jpg)`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} class="flex flex-column justify-center items-center mb-5 mt-5" >
             <div className="image">
                 <img src={header} width="1000" height="600" />
             </div>
@@ -32,7 +32,7 @@ const FormComponent = ({ handleSubmit, services }) => {
                                 name="name"
                                 label="Name"
                                 component={Text}
-                                validate={required}
+                                validate={[required]}
                             />
                         </div>
                         <div className="col">
@@ -40,7 +40,7 @@ const FormComponent = ({ handleSubmit, services }) => {
                                 name="phone"
                                 label="Phone Number"
                                 component={Text}
-                                validate={required}
+                                validate={[required]}
                             />
                         </div>
                     </div>
@@ -53,7 +53,7 @@ const FormComponent = ({ handleSubmit, services }) => {
                                 name="address"
                                 label="Address"
                                 component={Text}
-                                validate={required}
+                                validate={[required]}
                             />
                         </div>
                         <div className="col">
@@ -61,7 +61,7 @@ const FormComponent = ({ handleSubmit, services }) => {
                                 name="suburb"
                                 label="Suburb"
                                 component={Text}
-                                validate={required}
+                                validate={[required]}
                             />
                         </div>
                     </div>
@@ -73,7 +73,7 @@ const FormComponent = ({ handleSubmit, services }) => {
                                 name="email"
                                 label="Email"
                                 component={Text}
-                                validate={required}
+                                validate={[required]}
                             />
                         </div>
                     </div>
@@ -118,6 +118,7 @@ const FormComponent = ({ handleSubmit, services }) => {
                                 label="Date of services"
                                 showTime={false}
                                 component={Datepicker}
+                                validations={[required]}
                             />
                         </div>
                         <div className="col">
@@ -131,6 +132,7 @@ const FormComponent = ({ handleSubmit, services }) => {
                                     commerical: "Commercial",
                                     acerage: "Acerage"
                                 }}
+                                validations={[required]}
                             />
 
                         </div>
@@ -138,18 +140,15 @@ const FormComponent = ({ handleSubmit, services }) => {
                 </div>
 
                 <div className="container">
-                    <div className="row">
-                        <div clasNames="col">
-                            <title>Click to select Service/s Required:</title>
-                            <div className="col">
-                                <Field
-                                    name="service"
-                                    label="Services Required"
-                                    component={Multiselect}
-                                    data={services}
-                                />
-                            </div>
-                        </div>
+
+                    <title>Click to select Service/s Required:</title>
+                    <div className="col">
+                        <Field
+                            name="service"
+                            label="Services Required"
+                            component={Multiselect}
+                            data={services}
+                        />
                     </div>
                 </div>
                 <div className="container">
