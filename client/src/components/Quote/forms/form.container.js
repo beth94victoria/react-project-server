@@ -1,7 +1,7 @@
 import React from 'react';
 import FormComponent from './form.component';
 import axios from 'axios';
-import required from './form.validators'
+import { required } from './form.validators'
 
 const server = 'http://localhost:5000/freequote';
 
@@ -46,6 +46,7 @@ class FormContainer extends React.Component {
                 console.log('axios post success', response);
             })
             .catch(function (response) {
+
                 //handle error
                 console.log('axios post catch', formFields, response);
             });

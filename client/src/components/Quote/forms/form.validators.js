@@ -1,11 +1,8 @@
 import React from 'react';
-import validator from 'validator';
+import { Field, reduxForm } from 'redux-form'
 
-const required = (value) => {
-    if (!value) {
-        required.preventDefault()
-        return 'this field is required';
-    }
-}
+const required = value => (value || typeof value === 'number' ? value : 'Required')
 
-export default required
+
+
+export { required }

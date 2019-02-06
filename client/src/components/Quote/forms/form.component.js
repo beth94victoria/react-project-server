@@ -8,8 +8,8 @@ import 'react-widgets/dist/css/react-widgets.css'
 import { reduxForm } from 'redux-form'
 import '../formstyle.css';
 import header from '../header.png';
-import { required } from '../form.validators'
-
+import Form from 'react-validation/build/form';
+import { required } from './form.validators';
 
 
 const FormComponent = ({ handleSubmit, services }) => {
@@ -20,7 +20,7 @@ const FormComponent = ({ handleSubmit, services }) => {
             <div className="image">
                 <img src={header} width="1000" height="600" />
             </div>
-            <form
+            <Form
                 className="w-80"
                 onSubmit={handleSubmit}
             >
@@ -32,7 +32,7 @@ const FormComponent = ({ handleSubmit, services }) => {
                                 name="name"
                                 label="Name"
                                 component={Text}
-                                validate={[required]}
+                                validate={required}
                             />
                         </div>
                         <div className="col">
@@ -40,7 +40,7 @@ const FormComponent = ({ handleSubmit, services }) => {
                                 name="phone"
                                 label="Phone Number"
                                 component={Text}
-                                validate={[required]}
+                                validate={required}
                             />
                         </div>
                     </div>
@@ -53,7 +53,7 @@ const FormComponent = ({ handleSubmit, services }) => {
                                 name="address"
                                 label="Address"
                                 component={Text}
-                                validate={[required]}
+                                validate={required}
                             />
                         </div>
                         <div className="col">
@@ -61,7 +61,7 @@ const FormComponent = ({ handleSubmit, services }) => {
                                 name="suburb"
                                 label="Suburb"
                                 component={Text}
-                                validate={[required]}
+                                validate={required}
                             />
                         </div>
                     </div>
@@ -73,7 +73,7 @@ const FormComponent = ({ handleSubmit, services }) => {
                                 name="email"
                                 label="Email"
                                 component={Text}
-                                validate={[required]}
+                                validate={required}
                             />
                         </div>
                     </div>
@@ -118,7 +118,7 @@ const FormComponent = ({ handleSubmit, services }) => {
                                 label="Date of services"
                                 showTime={false}
                                 component={Datepicker}
-                                validations={[required]}
+                                validate={required}
                             />
                         </div>
                         <div className="col">
@@ -132,7 +132,7 @@ const FormComponent = ({ handleSubmit, services }) => {
                                     commerical: "Commercial",
                                     acerage: "Acerage"
                                 }}
-                                validations={[required]}
+                                validate={required}
                             />
 
                         </div>
@@ -162,7 +162,7 @@ const FormComponent = ({ handleSubmit, services }) => {
                 <button type="submit" className="link br2 bg-blue white dim pa3 f6 sans-serif b--blue ba">
                     Submit
 				</button>
-            </form>
+            </Form>
         </div >
     );
 };
