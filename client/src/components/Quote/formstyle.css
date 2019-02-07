@@ -9,16 +9,6 @@ html {
  box-sizing: border-box;
 }
 
-/* .myBackground{
-    width:400px;
-    height:200px; 
-    background-image:
-    background-repeat:no-repeat;
-    background-position:left top;
-}
-      */
-
-
 
 body {
  font: 100% 'Roboto', arial, sans-serif;
@@ -120,9 +110,9 @@ textarea {
 }
 
 select {
- padding: .5rem .75rem;
- height: 2.304rem; 
- background-color: #fff;
+    padding: .5rem .75rem; 
+    height: 2.304rem; 
+    background-color: #fff;
     border: #ccc 1px solid;
     border-radius: 4px;
     position: relative;
@@ -130,8 +120,13 @@ select {
     border-collapse: separate;
     display: inline-table;
     height: 2.429em;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.07)
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.07);
+    width: 200px;
+    
 }
+
+
+
 button {
  display: inline-block;
  padding: .75rem 1rem;

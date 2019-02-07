@@ -5,73 +5,73 @@ class Services extends Component {
 		return (
 			<div>
 				{/* the code commented out below is for image upload to be implemented later */}
-				{/* <div class="widget">
+				{/* <div className="widget">
 				<script src="//widget.cloudinary.com/global/all.js" type="text/javascript"></script>
 				<script src="bundle.js"></script>
 				</div> */}
-		<div class="container">
-			<div class="row">
-				<div class="col-6 align-items-center">
+		<div className="container">
+			<div className="row">
+				<div className="col-6 align-items-center">
 					<div>
-						<img class="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548735762/Five%20Star/mower_c.jpg"} alt="mower"/>
-						<br/><p class="servicetext">LAWN MOWING</p>
+						<img className="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549408306/Five%20Star/mower_res.jpg"} alt="mower"/>
+						<br/><p className="servicetext">LAWN MOWING</p>
 					</div>		
 				</div>
-				<div class="col-6 align-items-center">
+				<div className="col-6 align-items-center">
 					<div>
-						<img class="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548735759/Five%20Star/whippersnipper_c.jpg"} alt="whipsnip"/>
-						<br/><p class="servicetext">WHIPPER SNIPPING</p>
+						<img className="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549408307/Five%20Star/whippersnipper_res.jpg"} alt="whipsnip"/>
+						<br/><p className="servicetext">WHIPPER SNIPPING</p>
 					</div>				
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-6">
-					<img class="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548735761/Five%20Star/weeding_c.jpg"} alt="weeding"/>
-					<br/><p class="servicetext">WEEDING</p>				
+			<div className="row">
+				<div className="col-6">
+					<img className="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549408307/Five%20Star/weeding_res.jpg"} alt="weeding"/>
+					<br/><p className="servicetext">WEEDING</p>				
 				</div>
-				<div class="col-6">
-					<img class="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548735756/Five%20Star/hedging_c.jpg"} alt="hedging"/>
-					<br/><p class="servicetext">HEDGE TRIMMING</p>				
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-6">
-					<img class="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548735763/Five%20Star/spraying_c.jpg"} alt="spraying"/>
-					<br/><p class="servicetext">PLANT SPRAYING</p>				
-				</div>
-				<div class="col-6">
-					<img class="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548735758/Five%20Star/rubbish_c.jpg"} alt="rubbish"/>
-					<br/><p class="servicetext">RUBBISH REMOVAL</p>				
+				<div className="col-6">
+					<img className="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549408306/Five%20Star/hedging_res.jpg"} alt="hedging"/>
+					<br/><p className="servicetext">HEDGE TRIMMING</p>				
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-6">
-					<img class="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548735762/Five%20Star/gardening_c.jpg"} alt="gardening"/>
-					<br/><p class="servicetext">GARDENING</p>				
+			<div className="row">
+				<div className="col-6">
+					<img className="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549408307/Five%20Star/spraying_res.jpg"} alt="spraying"/>
+					<br/><p className="servicetext">PLANT SPRAYING</p>				
 				</div>
-				<div class="col-6">
-					<img class="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548735758/Five%20Star/treeremove_c.jpg"} alt="treetrim"/>
-					<br/><p class="servicetext">TREE TRIMMING</p>				
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-6">
-					<img class="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548735758/Five%20Star/treeremove_c.jpg"} alt="treecut"/>
-					<br/><p class="servicetext">TREE REMOVAL</p>				
-				</div>
-				<div class="col-6">
-					<img class="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548735766/Five%20Star/turf_c.jpg"} alt="turfing"/>
-					<br/><p class="servicetext">TURF LAYING</p>				
+				<div className="col-6">
+					<img className="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549408306/Five%20Star/rubbish_res.jpg"} alt="rubbish"/>
+					<br/><p className="servicetext">RUBBISH REMOVAL</p>				
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-6">
-					<img class="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548807835/Five%20Star/fert_c.jpg"} alt="fertilizer"/>
-					<br/><p class="servicetext">FERTILISE LAWNS</p>				
+			<div className="row">
+				<div className="col-6">
+					<img className="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549408306/Five%20Star/gardening_res.jpg"} alt="gardening"/>
+					<br/><p className="servicetext">GARDENING</p>				
 				</div>
-				<div class="col-6">
-					<img class="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548735755/Five%20Star/pressurewash_c.jpg"} alt="pressurewash"/>
-					<br/><p class="servicetext">PRESSURE WASHING</p>				
+				<div className="col-6">
+					<img className="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549408307/Five%20Star/treetrim_res.jpg"} alt="treetrim"/>
+					<br/><p className="servicetext">TREE TRIMMING</p>				
+				</div>
+			</div>
+			<div className="row">
+				<div className="col-6">
+					<img className="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549408307/Five%20Star/treeremove_res.jpg"} alt="treecut"/>
+					<br/><p className="servicetext">TREE REMOVAL</p>				
+				</div>
+				<div className="col-6">
+					<img className="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549408307/Five%20Star/turf_res.jpg"} alt="turfing"/>
+					<br/><p className="servicetext">TURF LAYING</p>				
+				</div>
+			</div>
+			<div className="row">
+				<div className="col-6">
+					<img className="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549408306/Five%20Star/fert_res.jpg"} alt="fertilizer"/>
+					<br/><p className="servicetext">FERTILISE LAWNS</p>				
+				</div>
+				<div className="col-6">
+					<img className="rounded servimg" src={"https://res.cloudinary.com/dvqlfwgtf/image/upload/v1549408306/Five%20Star/pressurewash_res.jpg"} alt="pressurewash"/>
+					<br/><p className="servicetext">PRESSURE WASHING</p>				
 				</div>
 			</div>
 		</div>

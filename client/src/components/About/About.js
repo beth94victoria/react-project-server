@@ -31,7 +31,7 @@ class About extends Component {
 					</p>
 					<p class="pb-2 lead">
 						So just fill out the{' '}
-						<a type="button" href="/freequote" class="btn btn-outline-primary ">
+						<a type="button" href="/freequote" class="btn btn-success ">
 							Quote Form
 						</a>{' '}
 						to have a free quote and property inspection.

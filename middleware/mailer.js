@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer')
 
 const mailer = (req,res) => {
 	const output = `
-		<p>You have a new contact request</p>
+		<p>You have a new quote request</p>
 		<h3>Contact Details</h3>
 		<ul>
 			TESTING: Below is the whole request body to see which fields are making it through the email:
@@ -21,6 +21,22 @@ const mailer = (req,res) => {
 		</ul>
 		<h3>Message</h3>
 		<p>${req.body.message}</p>
+		<br/><br/>
+		<p> ***QUOTE FORM*** </p>
+		<br/><br/>
+		<h3>Services and Rates:</h3>
+		<p>______</p>
+		<p>______</p>
+		<p>______</p>
+		<h3>Extra Charges:</h3>
+		<p>______</p>
+		<h3>Total Quote:</h3>
+		<p>______</p>
+		<h3>Booking Date and Time:</h3>
+		<p>______</p>
+		<h3>Approval Signature:</h3>
+		<p>______</p>
+
 	`
 	let transporter = nodemailer.createTransport({
 		host: "smtp-mail.outlook.com",
@@ -38,9 +54,9 @@ const mailer = (req,res) => {
 	  // setup email data with unicode symbols
 	  let mailOptions = {
 		from: '"Test" , <beththeboo94@hotmail.com>', // sender address
-		to: "huythanhdao@gmail.com", // list of receivers
+		to: "huythanhdao@gmail.com, jaouad.pxy@gmail.com", // list of receivers
 		subject: `Quote Request` , // Subject line
-		text: "I'm here for you", // plain text body
+		text: "Someone is requesting a quote:", // plain text body
 		html: output // html body
 	  };
 	

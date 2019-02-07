@@ -1,6 +1,6 @@
-import React, { Children } from 'react';
-import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBody } from 'reactstrap';
-import faker from 'faker';
+import React from 'react';
+import { Card, CardImg, CardTitle, CardText, CardBody } from 'reactstrap';
+
 const Package = (props) => {
 	return (
 		<Card className="mb-3">

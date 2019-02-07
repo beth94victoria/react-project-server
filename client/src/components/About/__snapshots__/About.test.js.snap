@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About snapshot Should render as expected 1`] = `
+<div
+  class="container mt-4 mb-4"
+  style={
+    Object {
+      "height": "600px",
+    }
+  }
+>
+  <div>
+    <img
+      alt=""
+      class="rounded-circle"
+      src="https://res.cloudinary.com/dvqlfwgtf/image/upload/v1548736044/Five%20Star/Troy_c.jpg"
+      style={
+        Object {
+          "float": "left",
+          "height": "200px",
+          "marginBottom": "10px",
+          "marginRight": "30px",
+          "marginTop": "20px",
+          "width": "200px",
+        }
+      }
+    />
+  </div>
+  <div
+    class="p-4 pb-5 "
+  >
+    <p
+      class=" pb-2 lead"
+    >
+      Five Star Mowing offers fast and reliable lawn and garden care for commercial and domestic resident properties in Caboolture and the surrounding areas of north Brisbane. After years of experience what keeps Troy going is the rewarding opportunity to stand back and see what has been accomplished. The satisfying feeling of ‘I did that!’ Even the smallest changes can make a big difference to a yard.
+    </p>
+    <p
+      class="pb-2 lead"
+    >
+      So just fill out the
+       
+      <a
+        class="btn btn-success "
+        href="/freequote"
+        type="button"
+      >
+        Quote Form
+      </a>
+       
+      to have a free quote and property inspection.
+    </p>
+    <p
+      class="container lead py-4"
+    >
+      Because you’ve got better things to do on a weekend than mow!
+    </p>
+  </div>
+</div>
+`;

@@ -3,11 +3,9 @@ import Package from './Package';
 import Zoom from 'react-reveal/Zoom';
 import Bounce from 'react-reveal/Bounce';
 import Slide from 'react-reveal/Slide';
-import Mybutton from '../MyButton';
 import Lawn from '../../resources/images/lawn-thumbnail.png';
 import Grass from '../../resources/images/grass-care.png';
 import Hedge from '../../resources/images/loop-hedge.png';
-import faker from 'faker';
 
 const Packages = () => {
 	return (

@@ -13,9 +13,9 @@ const Carousel = () => {
 	};
 
 	return (
-		<div>
+		<div className="row">
 			<div
-				className="carrousel_wrapper"
+				className="carrousel_wrapper col-12 col-md-12 col-sm-12"
 				style={{ height: `${window.innerHeight}px`, width: `${window.innerWidth}px` }}
 			>
 				<Slider {...settings}>
