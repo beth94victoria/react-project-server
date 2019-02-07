@@ -5,8 +5,8 @@ import About from './About'
 describe('About snapshot', () => {
     it('Should render as expected', () => {
         const tree = renderer.create(
-        <About/>
-        )
-        expect(tree.toJSON()).toMatchSnapshot()
+            <About page="http://localhost:3000/about">About</About>
+            )
+            expect(tree.toJSON()).toMatchSnapshot()
+        })
     })
-})
