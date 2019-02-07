@@ -19,16 +19,5 @@ Router.post('/freequote', (req,res, next) => {
         .catch((error) => res.sendStatus(500).json({ error: error.message }));
     console.log('Your expression of interest has been submitted successfully.')
 })
-                
-
-// Router.post('/freequote', (req, res) => {
-//     Quote.create(req.body)
-//         .then((quote) => {
-//             res.send(quote);
-//             console.log(quote)
-//         })
-//         .catch((error) => res.sendStatus(500).json({ error: error.message }));
-// });
-
 
 module.exports = Router;
