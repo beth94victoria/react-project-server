@@ -266,3 +266,6 @@ Knowledge:
 
 ### James:
 I understand the individual libraries and frameworks but have difficulty with the configuration between them. Also, when I see something built with different syntax as to how we learnt it in class I feel very lost. For example, I was referencing the slides and lectures for react and redux to work out how to get information from the store state, but the configuration was completely different in the store and reducer files so I had no idea how it was working. I had a similar issue with an onSubmit function and handleSubmit function, where I could see where they were initially defined, so could not distinguish how to manipulate their functionality. The projects themselves I think are good. I think more class time could be spent on understanding HTTP requests and how to deconstruct pre-defined functions and classes in APIs/ middleware/ imported libraries.
+
+### Thanh:
+My knowledge and skills in node.js have been effective and have improved, however my react skills need more improvement. I understand nodemailer, routes, models, mlabs and heroku better. Testing is hard.
