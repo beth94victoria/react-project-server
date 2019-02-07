@@ -1,7 +1,7 @@
 # Five Stars Mowing
 ### Michelle Bryant, James Hicks, Beth Callanan, Thanh Dao, Jaouad Sourour
 
-##### Deployed live on heroku at https://fierce-earth-84978.herokuapp.com/
+ ##### Deployed live on heroku at <a href="https://fierce-earth-84978.herokuapp.com" target="_blank">https://fierce-earth-84978.herokuapp.com => CTRL+click on the link to open in a new window</a>
 ##### visit our repo at https://github.com/thanhthedev/react-project-server
 
 ## Description of Project
@@ -24,6 +24,7 @@ We have built Five-Star Mowing’s business website with the following pages and
 
 ### Screenshots
 
+#### Application Screenshots:
 #### Mock up of homepage
 ![home-page-mock](https://user-images.githubusercontent.com/38389703/52257675-6d156600-2967-11e9-8e36-d51ad5304b7e.png)
 
@@ -50,6 +51,25 @@ We have built Five-Star Mowing’s business website with the following pages and
 
 #### Services page
 ![services-page](https://user-images.githubusercontent.com/38389703/52313847-da72d680-29fb-11e9-8981-2f46882be35c.png)
+
+#### Testing Screenshots:
+1 initial component rendering
+![testing screenshot 1 initial component rendering](https://user-images.githubusercontent.com/42342586/52385260-7704a980-2acc-11e9-9f10-1c8f74e28a71.png)
+2 GET services to form field
+![testing screenshot 2 get services to form](https://user-images.githubusercontent.com/42342586/52385261-779d4000-2acc-11e9-8219-5856c7a74935.png)
+3 POST form data
+![testing screenshot 3 post form data](https://user-images.githubusercontent.com/42342586/52385262-779d4000-2acc-11e9-9f15-8afb36684f4a.png)
+4 Correct data fow through mailer middleware
+![testing screenshot 4 correct data flow through mailer middleware](https://user-images.githubusercontent.com/42342586/52385263-779d4000-2acc-11e9-85b0-666278e719d2.png)
+5 Responsiveness on Heroku deployment
+![testing screenshot 5 responsiveness on heroku](https://user-images.githubusercontent.com/42342586/52385264-7835d680-2acc-11e9-9228-f8f47100145b.png)
+
+#### Team Communication Screenshots:
+![team communication screenshot 1](https://user-images.githubusercontent.com/42342586/52385244-6eac6e80-2acc-11e9-877e-d68963fc5fca.png)
+![team communication screenshot 2](https://user-images.githubusercontent.com/42342586/52385246-6eac6e80-2acc-11e9-9c34-3da02b5cb971.png)
+![team communication screenshot 3](https://user-images.githubusercontent.com/42342586/52385247-6f450500-2acc-11e9-940f-860f3800247f.png)
+![team communication screenshot 4](https://user-images.githubusercontent.com/42342586/52385248-6f450500-2acc-11e9-8519-62a881f1e291.png)
+![team communication screenshot 5](https://user-images.githubusercontent.com/42342586/52385249-6f450500-2acc-11e9-97af-c35f9cbbd36b.png)
 
 ### Tech stack (e.g. html, css, deployment platform, etc)
 
@@ -83,6 +103,51 @@ We have built Five-Star Mowing’s business website with the following pages and
 
 ## Design 
 ### Design process
+
+In the implementation and design of the project, tasks were allocated to specific members of the team. These tasks ranged from research, design, development or testing of the code for the site. Tasks were assigned through standup meetings that were conducted every morning, and were monitored primarily through verbal and slack communication. Trello was also utilised to assess the scale of the required tasks to complete.
+
+### Specification Assessment
+Client interviews and discussion
+Assessed client viability
+Confirmed client
+
+### Research
+-  Trello board  populated with specifications and criteria requirements to structure the design process.
+Researched libraries and component design to assess what would be the best approach to solving client specifications.
+Nodemailer chosen as email server
+Redux-forms chosen as framework to create the form quote due to its high versatility and ease of use.
+- Client Facebook image scraping
+
+### Database Design and Development
+Database models, quote and services constructed.
+Dataflow diagram and quote process implemented.
+Routes coded for implementation of the pages.
+
+
+### Visual Design and Development
+Visual design of pages - home, services, about, form.
+Styling elements selected (i.e colour code and font)
+Design libraries chosen
+
+
+### Form Design and Development
+- Components for form input constructed
+- Experimented with component design utilising Redux
+- Forms and React Widgets.
+- Form required different input values - text input, select from a drop down menu, multi select options from the services pulled from the database, time picker and date picker.
+- Widget utilised for date picker , because of difficulty in coding with localisers.
+- Time picker was hardcoded because of the difficulty with localisers.
+- Connected form submission to database using Axios
+
+### Email Design and Development
+- Implemented Nodemailer as the email process.
+- Connected form submission to Nodemailer
+
+
+### Testing
+Manual Testing  was conducted on the site continually throughout the build process
+Automated testing was conducted at the completion of the site to assess for any missed issues.
+
 ### User stories
 
 #### As anonymous I can: 
@@ -185,6 +250,11 @@ Date picker
 ### Client communications
 ![client-comunications](https://user-images.githubusercontent.com/38389703/52384323-c34dea80-2ac8-11e9-8de4-a5b9c18fdf27.jpg)
 
+###  !You will find in the Docs folder a audio file pertaining the main communication we had with our client as he is located in Caboolture and was not available to meet in person. 
+
+#### potential client record
+In the same docs folder there is a file with the email correspondence from our first potential client KatieB. 
+
 ### Screenshots of Trello board(s)
 
 ![trello screenshot 1](https://user-images.githubusercontent.com/42342586/52383906-0909b380-2ac7-11e9-8d84-1d5a4b93948d.png)
@@ -262,6 +332,7 @@ Knowledge:
 
 ### 4. Within your own project what knowledge or skills were required to complete your project, and overcome challenges?
 
+In our project we each implemented adequate time-management skills, although our communication sometimes wasn’t the greatest. All were confident enough to start on a feature and work separately but when needed, worked equally well as pairs or more trying to fix a bug.  
 
 ### 5.Evaluate how effective your knowledge and skills were this project, using examples, and suggest changes or improvements for future projects of a similar nature?
 
@@ -276,3 +347,6 @@ In the research and planning part of the project, my ability to research and ass
 
 ### Thanh:
 My knowledge and skills in node.js have been effective and have improved, however my react skills need more improvement. I understand nodemailer, routes, models, mlabs and heroku better. Testing is hard.
+
+### Beth
+Throughout this project I’ve felt while my knowledge, skills and confidence may be lacking working in a group that is quick to help out made me work harder at a problem. It’s hard to translate what we’ve learned in class to a real-world application but searching through the resources that we have, and the problem-solving skills we have accumulated throughout the course make it less overwhelming. I worked on validation and design aspects which I loved even when I couldn’t solve the problem my group made it a safe place to be stuck.   
