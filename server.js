@@ -5,7 +5,6 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const path = require('path');
 const mongoose = require('mongoose');
-// const exphbs = require('express-handlebars')
 const routes = require('./routes/Routes');
 
 // connect to mlab
@@ -27,13 +26,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // must be defined after body parser
 app.use(routes);
 
-//routes
-// app.get('/', (req, res, next) => {
-// 	res.send('<h1>team4everaintclever</h1>');
-// });
-
 app.use('/services', require('./routes/api/services'));
-// app.use('/quotes', require('./routes/api/quotes'))
 
 //mongoose
 mongoose.connect(dbConn, (err) => {
@@ -58,16 +51,5 @@ if (process.env.NODE_ENV === 'production') {
 		res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
 	});
 }
-
-//View engine App
-// app.engine('handlebars', exphbs())
-// app.set('view engine', 'handlebars')
-
-// //Static folder
-// app.use('/public', express.static(path.join(__dirname, 'public')))
-
-// app.get('/test', (req, res) => {
-// 	res.render('contact')
-// })
 
 app.listen(process.env.PORT || 5000, () => console.log('Listening on http://localhost:5000'));

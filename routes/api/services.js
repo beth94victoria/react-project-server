@@ -21,20 +21,4 @@ router.get('/', (req, res) => {
 		.catch((error) => res.sendStatus(500).json({ error: error.message }));
 });
 
-// UPDATE /services/:id (U)
-router.put('/:id', (req, res) => {
-	// Service.find......
-	// BELOW = CATCH IF CANNOT FIND SERVICE
-	//   ).catch(
-	//     error => res.sendStatus(500).json({ error: error.message })
-	//   )
-});
-
-// DELETE /services/:id (D)
-router.delete('/:id', (req, res) => {
-	Service.findByIdAndRemove(req.params.id)
-		.then(() => res.sendStatus(204))
-		.catch((error) => res.sendStatus(500).json({ error: error.message }));
-});
-
 module.exports = router;

@@ -6,9 +6,6 @@ const mailer = (req,res) => {
 		<p>You have a new quote request</p>
 		<h3>Contact Details</h3>
 		<ul>
-			TESTING: Below is the whole request body to see which fields are making it through the email:
-			${JSON.stringify(req.body)}
-			
 			<li>Name: ${req.body.name}</li>
 			<li>Address: ${req.body.address}</li>
 			<li>Suburb: ${req.body.suburb}</li>

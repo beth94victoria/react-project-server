@@ -1,7 +1,7 @@
-# REACT App
+# Five Stars Mowing
 ### Michelle Bryant, James Hicks, Beth Callanan, Thanh Dao, Jaouad Sourour
 
-##### Deployed live on heroku at https://fierce-earth-84978.herokuapp.com/
+ ##### Deployed live on heroku at <a href="https://fierce-earth-84978.herokuapp.com" target="_blank">https://fierce-earth-84978.herokuapp.com => CTRL+click on the link to open in a new window</a>
 ##### visit our repo at https://github.com/thanhthedev/react-project-server
 
 ## Description of Project
@@ -9,7 +9,7 @@
    * Services
    * Feedback
    * Location 
-   * Form to request a quote.
+   * Quote.
   
 ### Problem definition / purpose
 Our client was relying soley on facebook and word of mouth to attract potential clients for his lawn mowing business. The purpose of the web application is to display the services Troy has to offer, his location and travel limitations as well as a form for potentials to fill out to request a free quote.
@@ -24,6 +24,7 @@ We have built Five-Star Mowing’s business website with the following pages and
 
 ### Screenshots
 
+#### Application Screenshots:
 #### Mock up of homepage
 ![home-page-mock](https://user-images.githubusercontent.com/38389703/52257675-6d156600-2967-11e9-8e36-d51ad5304b7e.png)
 
@@ -50,6 +51,25 @@ We have built Five-Star Mowing’s business website with the following pages and
 
 #### Services page
 ![services-page](https://user-images.githubusercontent.com/38389703/52313847-da72d680-29fb-11e9-8981-2f46882be35c.png)
+
+#### Testing Screenshots:
+1 initial component rendering
+![testing screenshot 1 initial component rendering](https://user-images.githubusercontent.com/42342586/52385260-7704a980-2acc-11e9-9f10-1c8f74e28a71.png)
+2 GET services to form field
+![testing screenshot 2 get services to form](https://user-images.githubusercontent.com/42342586/52385261-779d4000-2acc-11e9-8219-5856c7a74935.png)
+3 POST form data
+![testing screenshot 3 post form data](https://user-images.githubusercontent.com/42342586/52385262-779d4000-2acc-11e9-9f15-8afb36684f4a.png)
+4 Correct data fow through mailer middleware
+![testing screenshot 4 correct data flow through mailer middleware](https://user-images.githubusercontent.com/42342586/52385263-779d4000-2acc-11e9-85b0-666278e719d2.png)
+5 Responsiveness on Heroku deployment
+![testing screenshot 5 responsiveness on heroku](https://user-images.githubusercontent.com/42342586/52385264-7835d680-2acc-11e9-9228-f8f47100145b.png)
+
+#### Team Communication Screenshots:
+![team communication screenshot 1](https://user-images.githubusercontent.com/42342586/52385244-6eac6e80-2acc-11e9-877e-d68963fc5fca.png)
+![team communication screenshot 2](https://user-images.githubusercontent.com/42342586/52385246-6eac6e80-2acc-11e9-9c34-3da02b5cb971.png)
+![team communication screenshot 3](https://user-images.githubusercontent.com/42342586/52385247-6f450500-2acc-11e9-940f-860f3800247f.png)
+![team communication screenshot 4](https://user-images.githubusercontent.com/42342586/52385248-6f450500-2acc-11e9-8519-62a881f1e291.png)
+![team communication screenshot 5](https://user-images.githubusercontent.com/42342586/52385249-6f450500-2acc-11e9-97af-c35f9cbbd36b.png)
 
 ### Tech stack (e.g. html, css, deployment platform, etc)
 
@@ -83,6 +103,51 @@ We have built Five-Star Mowing’s business website with the following pages and
 
 ## Design 
 ### Design process
+
+In the implementation and design of the project, tasks were allocated to specific members of the team. These tasks ranged from research, design, development or testing of the code for the site. Tasks were assigned through standup meetings that were conducted every morning, and were monitored primarily through verbal and slack communication. Trello was also utilised to assess the scale of the required tasks to complete.
+
+### Specification Assessment
+Client interviews and discussion
+Assessed client viability
+Confirmed client
+
+### Research
+-  Trello board  populated with specifications and criteria requirements to structure the design process.
+Researched libraries and component design to assess what would be the best approach to solving client specifications.
+Nodemailer chosen as email server
+Redux-forms chosen as framework to create the form quote due to its high versatility and ease of use.
+- Client Facebook image scraping
+
+### Database Design and Development
+Database models, quote and services constructed.
+Dataflow diagram and quote process implemented.
+Routes coded for implementation of the pages.
+
+
+### Visual Design and Development
+Visual design of pages - home, services, about, form.
+Styling elements selected (i.e colour code and font)
+Design libraries chosen
+
+
+### Form Design and Development
+- Components for form input constructed
+- Experimented with component design utilising Redux
+- Forms and React Widgets.
+- Form required different input values - text input, select from a drop down menu, multi select options from the services pulled from the database, time picker and date picker.
+- Widget utilised for date picker , because of difficulty in coding with localisers.
+- Time picker was hardcoded because of the difficulty with localisers.
+- Connected form submission to database using Axios
+
+### Email Design and Development
+- Implemented Nodemailer as the email process.
+- Connected form submission to Nodemailer
+
+
+### Testing
+Manual Testing  was conducted on the site continually throughout the build process
+Automated testing was conducted at the completion of the site to assess for any missed issues.
+
 ### User stories
 
 #### As anonymous I can: 
@@ -176,6 +241,7 @@ Date picker
 
 ## Project Management & Planning process including,
 
+![manual-tests](https://user-images.githubusercontent.com/38389703/52385015-a36bf600-2acb-11e9-97b3-90bfbe6cc7f7.png)
 
 ### Project plan & timeline
 ![project-timeline](https://user-images.githubusercontent.com/38389703/52384442-33f50700-2ac9-11e9-9a6f-8eca688664f4.jpg)
@@ -183,6 +249,11 @@ Date picker
 
 ### Client communications
 ![client-comunications](https://user-images.githubusercontent.com/38389703/52384323-c34dea80-2ac8-11e9-8de4-a5b9c18fdf27.jpg)
+
+###  !You will find in the Docs folder a audio file pertaining the main communication we had with our client as he is located in Caboolture and was not available to meet in person. 
+
+#### potential client record
+In the same docs folder there is a file with the email correspondence from our first potential client KatieB. 
 
 ### Screenshots of Trello board(s)
 
@@ -244,7 +315,7 @@ Lastly, the quality of the development process will affect the longevity of the 
 
 Skills: 
 ### Communication 
-   * gain a mutual understanding and agreement by listening to what the client wants and also making the client aware of your limits such as time and/or budget.
+   * Gain a mutual understanding and agreement by listening to what the client wants and also making the client aware of your limits such as time and/or budget.
    * Be assertive to prevent client from deferring from the agreed upon plan.
 ### Time management 
   * A clear and precise project plan that is revisited and readjusted where needed throughout the course of the project will keep developers on the task at hand. 
@@ -261,11 +332,26 @@ Knowledge:
 
 ### 4. Within your own project what knowledge or skills were required to complete your project, and overcome challenges?
 
+In our project we each implemented adequate time-management skills, although our communication sometimes wasn’t the greatest. All were confident enough to start on a feature and work separately but when needed, worked equally well as pairs or more trying to fix a bug.  
 
 ### 5.Evaluate how effective your knowledge and skills were this project, using examples, and suggest changes or improvements for future projects of a similar nature?
+
+### Jaouad:
+  Based on My knowledge and experience in design area, helped the team to build an humble template for the project and i took care of the landing page, using some functuinality like react frameworks, like react-slick, react-reveal, react-scroll....ect, and i managed to create and deploy one repo including the server and client instead two repos. At the end of the day, i see that i have graspped the fact that i need to be more orginised and learn how to cope with the time management when its running from me. 
+  
+  
+  
 
 ### James:
 I understand the individual libraries and frameworks but have difficulty with the configuration between them. Also, when I see something built with different syntax as to how we learnt it in class I feel very lost. For example, I was referencing the slides and lectures for react and redux to work out how to get information from the store state, but the configuration was completely different in the store and reducer files so I had no idea how it was working. I had a similar issue with an onSubmit function and handleSubmit function, where I could see where they were initially defined, so could not distinguish how to manipulate their functionality. The projects themselves I think are good. I think more class time could be spent on understanding HTTP requests and how to deconstruct pre-defined functions and classes in APIs/ middleware/ imported libraries.
 
+### Michelle:
+
+In this project, I was given the opportunity to code and create the quote form that would be submitted to the database and the mailer. 
+In the research and planning part of the project, my ability to research and assess what would be the best option forward helped to scope the project. For example in using Nodemailer for the email submission of the form and not emailing the form as a pdf. 
+
 ### Thanh:
 My knowledge and skills in node.js have been effective and have improved, however my react skills need more improvement. I understand nodemailer, routes, models, mlabs and heroku better. Testing is hard.
+
+### Beth
+Throughout this project I’ve felt while my knowledge, skills and confidence may be lacking working in a group that is quick to help out made me work harder at a problem. It’s hard to translate what we’ve learned in class to a real-world application but searching through the resources that we have, and the problem-solving skills we have accumulated throughout the course make it less overwhelming. I worked on validation and design aspects which I loved even when I couldn’t solve the problem my group made it a safe place to be stuck.   
